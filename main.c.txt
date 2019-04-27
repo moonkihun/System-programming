@@ -1,0 +1,49 @@
+char* mypwd1()
+{
+	char *buf,*path;
+	int index=0;
+	path=(char *)malloc(1024);
+	getcwd(path,1024);
+	char *input_tem[5];
+	char *show;
+	buf=strok(path,"/");
+	
+	while(buf!=NULL){
+	input_tem[index]=buf;
+	buf=strok(NULL,"/");}
+	show=input_tem[index]
+	return show;
+
+}
+int main()
+{
+	char *cmp;
+	char *input_tem[5]
+	input_tem[2]=NULL;
+	char input[20];
+	char *showp;
+	int size;
+	char *w[2];
+	signal(SIGINT,sig_quit);
+	
+	char *buf,*path;
+	path(char *)malloc(1024);
+	stract(path,":");
+	if(strcat(path,(char *)getenv("PATH")==NULL)
+		perror("get erroe\n");
+	if(setenv)("PATH",path,1)
+		perror("setenv error\n");
+	if(fgets(input,20,stdin)==NULL)
+	{
+		printf("\nexecute EOF\n");
+		exit(1);
+	}
+	void sig_quit(int signo)
+	{
+		printf("Signal Execute!\n");
+
+	}
+	else if(strcmp(input,"exit\n")==0){
+		printf("input exit\n");
+		exit(1);
+	}
