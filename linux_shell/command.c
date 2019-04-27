@@ -25,7 +25,7 @@ int check_arg(char *av[], const char *opt)
 }
 
 
-void cmd_cd(int ac, char *av[])
+void ter_cd(int ac, char *av[])
 {
 	char *path;
 
@@ -49,13 +49,13 @@ void cmd_cd(int ac, char *av[])
 }
 
 
-void cmd_exit()
+void ter_exit()
 {
 	exit(1);
 }
 
 
-void cmd_ls(int ac, char *av[])
+void ter_ls(int ac, char *av[])
 {
 	DIR *dp;
 	struct dirent *entry;
@@ -131,7 +131,7 @@ void cmd_ls(int ac, char *av[])
 }
 
 
-void cmd_cp(int ac, char *av[])
+void ter_cp(int ac, char *av[])
 {
 	FILE *src;
 	FILE *dst;
@@ -180,7 +180,7 @@ void cmd_cp(int ac, char *av[])
 }
 
 
-void cmd_rm(int ac, char *av[])
+void ter_rm(int ac, char *av[])
 {
 	
 	if(ac < 2)
@@ -200,7 +200,7 @@ void cmd_rm(int ac, char *av[])
 }
 
 
-void cmd_start(int ac, char *av[]){
+void ter_start(int ac, char *av[]){
 if(ac < 2)
 	{
 		fprintf(stderr, "Not enough arguments.\n");
@@ -208,7 +208,7 @@ if(ac < 2)
 	}
 
 }
-void cmd_mv(int ac, char *av[])
+void ter_mv(int ac, char *av[])
 {
 	FILE *src;
 	FILE *dst;
@@ -259,7 +259,7 @@ void cmd_mv(int ac, char *av[])
 }
 
 
-void cmd_mkdir(int ac, char *av[])
+void ter_mkdir(int ac, char *av[])
 {
 	
 	if(ac < 2)
@@ -276,7 +276,7 @@ void cmd_mkdir(int ac, char *av[])
 }
 
 
-void cmd_rmdir(int ac, char *av[])
+void ter_rmdir(int ac, char *av[])
 {
 	
 	if(ac < 2)
@@ -293,7 +293,7 @@ void cmd_rmdir(int ac, char *av[])
 }
 
 
-void cmd_cat(int ac, char *av[])
+void ter_cat(int ac, char *av[])
 {
 	int ch;
 	FILE *fp;
