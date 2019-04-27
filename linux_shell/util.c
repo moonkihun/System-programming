@@ -87,55 +87,55 @@ BOOLEAN shellcmd(int ac, char *av[], int sourcefd, int destfd)
 	// cd
 	if(!strcmp(av[0], "cd"))
 	{
-		cmd_cd(ac, av);
+		ter_cd(ac, av);
 	}
 	// ls
 	else if(!strcmp(av[0], "ls"))
 	{
-		cmd_ls(ac, av);
+		ter_ls(ac, av);
 	}
 	// cp
 	else if(!strcmp(av[0], "cp"))
 	{
-		cmd_cp(ac, av);
+		ter_cp(ac, av);
 	}
 	// rm
 	else if(!strcmp(av[0], "rm"))
 	{
-		cmd_rm(ac, av);
+		ter_rm(ac, av);
 	}
 	// mv
 	else if(!strcmp(av[0], "mv"))
 	{
-		cmd_mv(ac, av);
+		ter_mv(ac, av);
 	}
 	// mkdir
 	else if(!strcmp(av[0], "mkdir"))
 	{
-		cmd_mkdir(ac, av);
+		ter_mkdir(ac, av);
 	}
 	// rmdir
 	else if(!strcmp(av[0], "rmdir"))
 	{
-		cmd_rmdir(ac, av);
+		ter_rmdir(ac, av);
 	}
 	// cat
 	else if(!strcmp(av[0], "cat"))
 	{
-		cmd_cat(ac, av);
+		ter_cat(ac, av);
 	}
 	// exit
 	else if(!strcmp(av[0], "exit"))
 	{
-		cmd_exit();
+		ter_exit();
 	}
         else if(!strcmp(av[0], "quit"))
 	{
-		cmd_exit();
+		ter_exit();
 	}
           else if(!strcmp(av[0], "q"))
 	{
-		cmd_exit();
+		ter_exit();
 	}
 	else
 	{
