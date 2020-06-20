@@ -1,7 +1,10 @@
-cc=gcc
-OBJECT=mysh.o,Fpipe.o,Fredirect.o,mypwd.o,mycat.o,myhead.o,mytail.o,mymkdir.o,myrm.o,myrmdir.o,myls.o,myp.o,set.o
-MAIN_SOURCE=mysh.c
-TARGET=mysh
-${TARGET}:$(OBJECT)
-	$(CC) -o $@ $(OBJECT) $(LFLAGS)
+CC = gcc
+TARGET = main
+$(TARGET) : main.o
+	$(CC) -o $(TARGET) main.o
+server.o : main.c
+	$(CC) -c -o main.o main.c
+clean:
+	rm *.o main
+
 
